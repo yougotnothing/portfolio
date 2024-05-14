@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend:wght@100..900&family=Noto+Color+Emoji&display=swap');
+
+@mixin archivo-black($size) {
+  font-family: "Archivo Black", "Noto Color Emoji", sans-serif;
+  font-size: $size;
+  user-select: none;
+  -mox-user-select: none;
+  -webkit-user-select: none;
+}
+
+@mixin lexend($size, $weight) {
+  font-family: "Lexend", "Noto Color Emoji", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  user-select: none;
+  -mox-user-select: none;
+  -webkit-user-select: none;
+}

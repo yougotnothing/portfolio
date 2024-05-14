@@ -1,0 +1,62 @@
+@use "../../templates/mixins/fonts.scss" as *;
+@import "../../templates/mixins/colors";
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: $background-color;
+  width: 100svw;
+  height: 100svh;
+  overflow-x: hidden;
+}
+
+.blue-shadow {
+  opacity: 0;
+  width: 140px;
+  height: 358px;
+  position: fixed;
+  bottom: 160px;
+  left: -140px;
+  border-radius: 50%;
+  box-shadow: 0 0 358px 358px rgb(95, 210, 206);
+}
+
+.violet-shadow {
+  opacity: 0;
+  width: 60svw;
+  height: 250px;
+  position: fixed;
+  top: -250px;
+  right: -150px;
+  border-radius: 50%;
+  box-shadow: 0 0 350px 350px rgb(108, 88, 177); 
+}
+
+.green-shadow {
+  opacity: 0;
+  width: 420px;
+  height: 220px;
+  position: fixed;
+  bottom: -420px;
+  right: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 420px 420px rgb(148, 195, 106);
+}
+
+.wrapper > p {
+  @include lexend(1.2rem, 300);
+  color: $light-text;
+}
+
+.about-me {
+  opacity: 0;
+  @include lexend(8rem, 900);
+  color: white;
+  position: relative;
+  z-index: 10;
+  top: 200px;
+}

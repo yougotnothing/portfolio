@@ -1,0 +1,83 @@
+@use "../mixins/fonts.scss" as *;
+@import "../mixins/colors.scss";
+
+.navbar {
+  width: 100svw;
+  position: fixed;
+  border-bottom: 1.5px solid rgba(117, 117, 117, 0.825);
+  backdrop-filter: blur(14px);
+  background-color: rgba(33, 33, 33, 0.4);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 99;
+  opacity: 0;
+}
+
+.navbar-button {
+  padding: 6px 28px;
+  border-radius: 28px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  @include lexend(1.2rem, 400);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: $light-text;
+  }
+
+  &:active {
+    color: white;
+    transform: scale(0.98);
+    border-color: rgba(255, 255, 255, 0.706);
+  }
+}
+
+.navbar-button:nth-child(1):hover {
+  filter: drop-shadow(0 0 10px rgb(130, 32, 228));
+}
+
+.navbar-button:nth-child(2):hover {
+  filter: drop-shadow(0 0 10px #98ff98);
+}
+
+.navbar-button:nth-child(3):hover {
+  filter: drop-shadow(0 0 10px rgb(255, 144, 162));
+}
+
+.links-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.links-wrapper > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  transition: filter 0.3s ease;
+}
+
+.links-wrapper > a:nth-child(1):hover {
+  filter: drop-shadow(0 0 10px rgb(255, 144, 162));
+}
+
+.links-wrapper > a:nth-child(2):hover {
+  filter: drop-shadow(0 0 10px rgb(134, 134, 134));
+}
+
+.links-wrapper > a > svg {
+  width: 100%;
+  height: 100%;
+}

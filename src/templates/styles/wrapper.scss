@@ -1,0 +1,14 @@
+.wrapper {
+  opacity: 0;
+  margin: auto;
+  background-color: rgba(47, 47, 47, 0.4);
+  border: 1.5px solid rgba(117, 117, 117, 0.825);
+  padding: 20px;
+  border-radius: 24px;
+  height: max-content;
+  max-width: calc(1000px - 42px);
+  backdrop-filter: blur(14px);
+  position: relative;
+  z-index: 4;
+  transition: all 0.3s ease;
+}
