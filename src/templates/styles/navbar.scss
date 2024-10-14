@@ -26,6 +26,12 @@
   border: 2px solid transparent;
   transition: all 0.3s ease;
   cursor: pointer;
+  text-wrap: nowrap;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0;
+    font-size: 0.8rem;
+  }
 
   &:hover {
     color: $light-text;

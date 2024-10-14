@@ -55,6 +55,10 @@ body {
   position: relative;
   z-index: 10;
   top: 150px;
+
+  @media screen and (max-width: 1200px) {
+    @include lexend(2.6rem, 900);
+  }
 }
 
 .wrapper {
